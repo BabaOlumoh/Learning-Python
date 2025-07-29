@@ -30,5 +30,5 @@ elif stored_user_input == 5:
     if stored_user_input_remove in personal_info:
         personal_info.pop(stored_user_input_remove)
         print(f"Item removed succesfully. \n{personal_info}")
-    else: print("Item not found")
-else: print("Input error!")
+    else: print("\nItem not found!")
+else: print("\nInput error!")
