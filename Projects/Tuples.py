@@ -21,14 +21,14 @@ if user_input == 1:
     print(activity_log)
 
 elif user_input == 2:
-    activity_input =input("Enter activity").strip().capitalize
+    activity_input =input("Enter activity").strip().capitalize()
     activity_result = activity_log.count(activity_input)
     print(f"You did {activity_input} {activity_result} times")
 elif user_input == 3:
     days = ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
     activity_day_input = input("Enter activity name: ").strip().capitalize()
-    stored_input = activity_log.index(activity_day_input)
     if activity_day_input in activity_log:
+        stored_input = activity_log.index(activity_day_input)
         print(f"You first did {activity_day_input} first on {days[stored_input]}")
     else: print(f"{activity_day_input} not found")
 elif user_input == 4:
