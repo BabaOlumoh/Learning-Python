@@ -1,8 +1,7 @@
 
 stored_entry = (("/Users/homebase/Desktop/Python/Udemy Course/Dependencies/diaryfile.txt"))
 myfavourite = ("/Users/homebase/Desktop/Python/Udemy Course/Dependencies/myfavourite.txt")
-
-
+1
 
 print("Welcome to your Daily Diary Logger")
 print("1. Write Entry \n2. Read all Recorded Entry \n3. Add your Favourites \n4. Search for Keyword \n5. Show the Last Recorded Entry \n")
@@ -17,9 +16,17 @@ elif menu_input == 2:
     with open(stored_entry, 'r') as f:
         print(f.read())
 elif menu_input == 3:
-    fav_input = tuple(input("Record your three favourites activities here: "))
+    fav_entry1 = input("Enter your first favourite activity here: ")
+    fav_entry2 = input("Enter your first favourite activity here: ")
+    fav_entry3 = input("Enter your first favourite activity here: ")
+    fav_input = (fav_entry1,fav_entry2,fav_entry3)
+
     with open(myfavourite, 'a') as f:
         f.write(f"{fav_input}\n")
+
+    with open(myfavourite, 'r') as f:
+        print(f.read())
+        
 elif menu_input == 4:
     checker_input = input("Enter keywords: ")
     with open(stored_entry, 'r') as f:
@@ -29,6 +36,6 @@ elif menu_input == 4:
     else: print(f"{checker_input} is not present in the document")
 elif menu_input == 5:
     with open(stored_entry, 'r') as f:
-        last_entry = list(f.read())
-        print(f"Your last entry is {last_entry[::-1]}")
+        last_entry = f.readlines()
+        print(f"Your last entry is {last_entry[-1].strip()}")
 else: print("Invalid input")
