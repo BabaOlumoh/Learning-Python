@@ -16,7 +16,7 @@ if menu_input == 1:
         f.write(f"{user_diary_entry}\n")
 elif menu_input == 2:
     with open(diary_entry, 'r') as f:
-        print(f.read(diary_entry))
+        print(f.read())
 elif menu_input == 3:
     print
 elif menu_input == 4:
