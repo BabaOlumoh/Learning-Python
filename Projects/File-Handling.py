@@ -3,7 +3,6 @@ stored_entry = (("/Users/homebase/Desktop/Python/Udemy Course/Dependencies/diary
 myfavourite = ("/Users/homebase/Desktop/Python/Udemy Course/Dependencies/myfavourite.txt")
 
 
-
 print("Welcome to your Daily Diary Logger")
 print("1. Write Entry \n2. Read all Recorded Entry \n3. Add your Favourites \n4. Search for Keyword \n5. Show the Last Recorded Entry \n")
 
@@ -18,8 +17,8 @@ elif menu_input == 2:
         print(f.read())
 elif menu_input == 3:
     fav_entry1 = input("Enter your first favourite activity here: ")
-    fav_entry2 = input("Enter your first favourite activity here: ")
-    fav_entry3 = input("Enter your first favourite activity here: ")
+    fav_entry2 = input("Enter your second favourite activity here: ")
+    fav_entry3 = input("Enter your third favourite activity here: ")
     fav_input = (fav_entry1,fav_entry2,fav_entry3)
 
     with open(myfavourite, 'a') as f:

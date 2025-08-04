@@ -1,7 +1,7 @@
-Football
-Netball
-Basketball
-Baseball
-Dodgeball
-Reading
-Writing
+Monday:Football
+Tuesday:Netball
+Wednesday:Basketball
+Thursday:Baseball
+Friday:Dodgeball
+Saturday:Reading
+Sunday:Writing
