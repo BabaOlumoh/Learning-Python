@@ -2,7 +2,7 @@
 stored_entry = (("/Users/homebase/Desktop/Python/Udemy Course/Dependencies/diaryfile.txt"))
 myfavourite = ("/Users/homebase/Desktop/Python/Udemy Course/Dependencies/myfavourite.txt")
 
-
+loop
 print("Welcome to your Daily Diary Logger")
 print("1. Write Entry \n2. Read all Recorded Entry \n3. Add your Favourites \n4. Search for Keyword \n5. Show the Last Recorded Entry \n")
 

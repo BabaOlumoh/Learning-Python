@@ -1,7 +1,6 @@
 # Mini Project: Weekly Activity Logger (Using Tuples)
 
 looper = 0
-start_input = input("Enter Y to start or X to close app: ").lower()
 while looper < 1:
     start_input = input("Enter Y to start or X to close app: ").lower()
     if start_input == 'y':
