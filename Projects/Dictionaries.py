@@ -1,3 +1,8 @@
+
+looper = 0
+
+while 
+
 personal_info = {
     "Name": "Mel",
     "Age": "25",
