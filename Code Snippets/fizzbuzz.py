@@ -4,4 +4,4 @@ for num in range(1,100):
     elif num % 5 == 0:
         print(f"{num} is Buzz")
     elif num % 3 == 0:
-       
+        print(f"{num} is Fizz")
