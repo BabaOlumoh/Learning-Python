@@ -24,6 +24,16 @@ while True:
             file[get_student_name] = get_student_grade
         else: print("The allowed grade input is 0-100")
         print(f"The updated database \n{file}")
+    elif choice == 2:
+        if file:
+            for name, grade in file.items():
+                print("\nStudents currently in the datebase.")
+                print(f"{name} : {grade}")
+        else: print("No Student found!!")
+    elif choice == 3:
+        print("No Student found!!")
+    elif choice == 4:
+        print("No Student found!!")
     elif choice == 5:
         print("Program Closed! \n")
         break
