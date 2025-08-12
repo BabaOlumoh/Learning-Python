@@ -19,8 +19,10 @@ while True:
         print("Enter student name below:")
         get_student_name = user_input()
         print("Enter student grade below:")
-        get_student_grade = user_input()
-        file[get_student_name] = get_student_grade
+        get_student_grade = int(user_input())
+        if get_student_grade >= 0 and get_student_grade <= 100:
+            file[get_student_name] = get_student_grade
+        else: print("The allowed grade input is 0-100")
         print(f"The updated database \n{file}")
     elif choice == 5:
         print("Program Closed! \n")
