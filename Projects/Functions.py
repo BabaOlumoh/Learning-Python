@@ -1,5 +1,5 @@
 
-file = {}
+file = {'Tunde':90, 'Tade':70}
 
 def menu_choice():
     user_menu = int(input("Choose between 1-5: "))
@@ -27,19 +27,26 @@ while True:
         print(f"The updated database \n{file}")
     elif choice == 2:
         if file:
+            print("\nStudents currently in the datebase.")
             for name, grade in file.items():
-                print("\nStudents currently in the datebase.")
                 print(f"{name} : {grade}")
         else: print("No Student found!!")
     elif choice == 3:
         print("Enter student name below: ")
-        if user_input() in file:
-            for name, grade in file.items():
-                print(f"{name} : {grade}")
-        else: print(f"{get_user_input} not found!!")
+        get_search_name = user_input()
+        if get_search_name in file:
+            print(f"{get_search_name} : {file[get_search_name]}")
+        else: print(f"{get_search_name} not found!!")
     elif choice == 4:
-        print("No Student found!!")
+        print("Enter student name below: ")
+        get_remove_name = user_input()
+        if get_remove_name in file:
+            file.pop(get_remove_name)
+            print(f"{get_remove_name} has been removed")
+            print(f"The updated database \n{file}")
     elif choice == 5:
+        get_update_name = user_input()
+    elif choice == 6:
         print("Program Closed! \n")
         break
     
