@@ -6,6 +6,7 @@ def menu_choice():
     return user_menu
 
 def user_input():
+    global get_user_input
     get_user_input = input().capitalize().strip()
     return get_user_input
 
@@ -31,7 +32,11 @@ while True:
                 print(f"{name} : {grade}")
         else: print("No Student found!!")
     elif choice == 3:
-        print("No Student found!!")
+        print("Enter student name below: ")
+        if user_input() in file:
+            for name, grade in file.items():
+                print(f"{name} : {grade}")
+        else: print(f"{get_user_input} not found!!")
     elif choice == 4:
         print("No Student found!!")
     elif choice == 5:
