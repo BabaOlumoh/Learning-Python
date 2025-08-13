@@ -56,7 +56,7 @@ while True:
                 file[get_update_name] = get_update_grade
             else: print("The allowed grade input is 0-100")
             print(f"The updated database \n{file}")
-        else: print(f"{get_update_name} not found in datebase")
+        else: print(f"{get_update_name} not found in database")
     elif choice == 6:
         print("Program Closed! \n")
         break
