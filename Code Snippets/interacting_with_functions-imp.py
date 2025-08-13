@@ -21,8 +21,15 @@ def check_guess(mylist, guess):
         print("Wrong guess!")
         print(mylist)
 
-mixedup_list = shuffle_list(mylist)
+user_input = input("Enter to s").lower()
+while True: 
+    if user_input == 's':
+        mixedup_list = shuffle_list(mylist)
 
-guess = user_guess()
+        guess = user_guess()
 
-check_guess(mixedup_list, guess)
+        check_guess(mixedup_list, guess)
+    elif user_input == 'x':
+        print("Program closed")
+        break
+
