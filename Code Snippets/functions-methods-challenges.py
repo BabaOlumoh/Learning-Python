@@ -75,3 +75,28 @@ def ispangram(str1, alphabet = string.ascii_lowercase):
     
 ispangram("The quick brown fox jumps over the lazy dog")
 
+def lesser_of_two_evens(a,b):
+    #Lesser
+    if a % 2 == 0 and b % 2 == 0:
+        if a < b:
+            print (a)
+        elif a > b:
+            print(b)
+    elif a % 2 != 0 or b % 2 != 0:
+        #Greater
+        if a > b:
+            print (a)
+        elif a < b:
+            print (b)
+
+lesser_of_two_evens(2,4)
+
+def animal_crackers(text):
+    text_split = text.split()
+    if text_split[0][0] == text_split[1][0]:
+        return True
+    else: return False
+
+animal_crackers('Levelheaded Llama')
+animal_crackers('Crazy Kangaroo')
+
