@@ -1,3 +1,6 @@
+import string
+string.ascii_lowercase
+
 def vol(rad):
     rad = (4/3)*3.14*(rad **3)
     
@@ -42,9 +45,33 @@ def unique_list(lst):
 
 unique_list([1,1,1,1,2,2,3,3,3,3,4,5])
 
+#Important logic
 def multiply(numbers):
     total = 0
     for item in numbers:
         total = item * item
         return total
     
+multiply([1,2,3,-4])
+
+def palindrome(s):
+    reversed_string = s[::-1]
+    if reversed_string == s:
+        return True
+    else: return False
+
+palindrome('helleh')
+
+#important
+def ispangram(str1, alphabet = string.ascii_lowercase):
+    #convert args to set to use issuperset method
+    str1_set = set(str1)
+    alphabet_set = set(alphabet)
+
+    if str1_set.issuperset(alphabet_set):
+        return True
+    else:
+        return False
+    
+ispangram("The quick brown fox jumps over the lazy dog")
+
