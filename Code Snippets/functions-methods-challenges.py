@@ -108,6 +108,7 @@ def makes_twenty(n1,n2):
 makes_twenty(20,10)
 makes_twenty(2,3)
 
+#join imp
 def master_yoda(text):
     text_split = text.split()
     for word in text_split:
@@ -118,3 +119,20 @@ def master_yoda(text):
 master_yoda('I am home')
 master_yoda('We are ready')
 
+def almost_there(n):
+    return (90 <= n <=110) or (190 <= n <= 210)
+
+#abs()
+def almost_there(n):
+    return abs(n - 100) <= 10 or abs(n - 200) <= 10
+
+almost_there(104)
+almost_there(150)
+
+def has_33(nums):
+    for num in range(len(nums)-1):
+        if nums[num] == 3 and nums[num+1] == 3:
+            return True
+    return False
+
+has_33([1, 3, 3])
