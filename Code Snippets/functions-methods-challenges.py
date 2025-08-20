@@ -108,3 +108,13 @@ def makes_twenty(n1,n2):
 makes_twenty(20,10)
 makes_twenty(2,3)
 
+def master_yoda(text):
+    text_split = text.split()
+    for word in text_split:
+        new_text = text_split[::-1]
+        s = " ".join(new_text)
+    return s
+
+master_yoda('I am home')
+master_yoda('We are ready')
+
