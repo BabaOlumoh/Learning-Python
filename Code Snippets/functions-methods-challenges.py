@@ -136,3 +136,22 @@ def has_33(nums):
     return False
 
 has_33([1, 3, 3])
+
+'''
+def paper_doll(text):
+    new_string = []
+    for i in text:
+        multiplied = i * 3
+        new_string.append(multiplied)
+        x = ''.join(new_string)
+    return x
+    '''
+
+def paper_doll(text):
+    new_string = ""
+    for i in text:
+        new_string += i * 3
+    return new_string
+
+paper_doll('Hello')
+
