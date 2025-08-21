@@ -154,4 +154,52 @@ def paper_doll(text):
     return new_string
 
 paper_doll('Hello')
+paper_doll('Mississippi')
 
+def blackjack(a,b,c):
+    total = a+b+c
+    if total <= 21:
+        return total
+    elif total > 21:
+        if a == 11 or b == 11 or c == 11:
+            total -= 10
+            return total
+    return "Bust"
+
+#using in for if statement
+def blackjack(a,b,c):
+    total = a+b+c
+    if total <= 21:
+        return total
+    elif total > 21 and 11 in (a,b,c):
+        total -=10
+        return total
+    return "Bust"
+blackjack(5,6,7)  
+blackjack(9,9,9)
+blackjack(9,9,11)
+
+
+#imp flag
+def summer_69(arr):
+    total = 0
+    add = True
+    
+    for num in arr:
+        if num == 6:
+            add = False
+        elif num == 9 and not add:
+            add = True
+        elif add:
+            total += num
+    return total
+
+
+#Imp
+def spy_game(nums):
+
+    code = [0,0,7, 'x']
+    for num in nums:
+        if num == code[0]:
+            code.pop(0)
+    return len(code) ==1
