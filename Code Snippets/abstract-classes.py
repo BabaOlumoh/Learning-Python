@@ -18,3 +18,5 @@ class Cat(Animal):
 
 fido = Dog("Fido")
 isis = Cat("Isis")
+print(fido.speak())
+print(isis.speak())
