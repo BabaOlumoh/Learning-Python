@@ -17,7 +17,6 @@ class Account():
 
     def __str__(self):
         return f"{self.owner} {self.balance}"
-        
 
 acct1 = Account('Jose',100)
 print(acct1)
