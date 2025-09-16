@@ -1,31 +1,32 @@
 def ask_for_it():
-    while True: #loop so that the block can restart
-        try: #try this block to see if any errors
+    while True:  # loop so that the block can restart
+        try:  # try this block to see if any errors
             result = int(input("Please provide a number: "))
-        except: #If there's an error, do this
+        except:  # If there's an error, do this
             print(("Whoops! That is not a number"))
-            continue #continue 
-        else: #if there's no error, continue with this block of code
+            continue  # continue
+        else:  # if there's no error, continue with this block of code
             print("Correct, thank you")
             break
-        finally: #this block will always run regardless if there's error or not
+        finally:  # this block will always run regardless if there's error or not
             print("This block will always run")
+
 
 ask_for_it()
 
-for i in ['a','b',3]:
-    try:
-        print(i**2)
-    except: 
-        print("This is invalid \n Try again!")
-        continue
-    else: 
-        print("Correct")
-        break
 
-x = 5
-y = 0
-try: 
+try:
+    for i in ['a', 'b', 3]:
+        print(i**2)
+except: 
+        print("This is invalid \n Try again!")
+else: 
+        print("Correct")
+
+
+try:
+    x = 5
+    y = 0
     z = x/y
 except ZeroDivisionError: 
     print("Can't be divided by zero")
