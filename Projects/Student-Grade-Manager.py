@@ -25,7 +25,7 @@ class School:
     def add_student(self, student):
         self.students.append(student)
 
-    def show_all_student(self):
+    def show_all_students(self):
         for student in self.students:
             print(student)
 
@@ -47,7 +47,7 @@ model = School()
 model.students = [john, mary, david, sarah, grace]
 mel = Student("Mel", "MAT006", {"Math": 90, "English": 95, "Science": 82, "History": 83})
 model.add_student(mel)
-model.show_all_student()
+model.show_all_students()
 model.find_student("MAT007")
 mel.calculate_average()
 john.display_info()
