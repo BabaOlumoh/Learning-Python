@@ -1,7 +1,8 @@
 import statistics
 import datetime
 import os
-
+import shutil
+import glob
 backup_path = os.getcwd()
 report_path = os.getcwd()
 class Student:
@@ -67,7 +68,18 @@ class School:
                 with open(os.path.join(path, f"report{gen_title}.txt"), "a+") as f:
                     f.write(f"{student.display_info()}\n")
     def back_reports(self):
-        pass
+        directory = "Backup_Directory"
+        destination = os.path.join(os.getcwd(), directory)
+        source = glob.glob(os.path.join(os.getcwd(), "Report_Directory/*.txt"))
+        try:
+            os.makedirs(destination, exist_ok = True)
+            print(f"{directory} created successfully")
+        except OSError as error:
+            print(f"{directory} already exist")
+        finally:
+            for file in source:
+                shutil.copy(file, destination)
+                print(f"The following files {file} have been copied to {directory}")
 
     def delete_all_reports(self):
         pass
