@@ -3,6 +3,8 @@ import datetime
 import os
 import shutil
 import glob
+import send2trash
+
 backup_path = os.getcwd()
 report_path = os.getcwd()
 class Student:
@@ -82,7 +84,10 @@ class School:
                 print(f"The following files {file} have been copied to {directory}")
 
     def delete_all_reports(self):
-        pass
+        destination = glob.glob(os.path.join(os.getcwd(), "Report_Directory/*.txt"))
+        for file in destination:
+            send2trash.send2trash(file)
+            print(f"The following files: {file} have been sent to bin")
 
 john = Student("John", "MAT001", {"Math": 85, "English": 90, "Science": 78, "History": 88}, 0)
 mary = Student("Mary", "MAT002", {"Math": 70, "English": 82, "Science": 75, "History": 80}, 0)

@@ -4,3 +4,4 @@ Name: Mary | Student_ID: MAT002 | Grades: {'Math': 70, 'English': 82, 'Science':
 Name: Mary | Student_ID: MAT002 | Grades: {'Math': 70, 'English': 82, 'Science': 75, 'History': 80} | Average 0
 Name: Mary | Student_ID: MAT002 | Grades: {'Math': 70, 'English': 82, 'Science': 75, 'History': 80} | Average 0
 Name: Mary | Student_ID: MAT002 | Grades: {'Math': 70, 'English': 82, 'Science': 75, 'History': 80} | Average 0
+Name: Mary | Student_ID: MAT002 | Grades: {'Math': 70, 'English': 82, 'Science': 75, 'History': 80} | Average 0
