@@ -1,0 +1,1 @@
+Name: John | Student_ID: MAT001 | Grades: {'Math': 85, 'English': 90, 'Science': 78, 'History': 88, 'Chem': 7} | Average 0

@@ -1,0 +1,1 @@
+Name: David | Student_ID: MAT003 | Grades: {'Math': 95, 'English': 89, 'Science': 92, 'History': 94} | Average 0

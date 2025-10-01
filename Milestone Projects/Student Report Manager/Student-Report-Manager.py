@@ -56,7 +56,7 @@ class School:
     def back_reports(self):
         pass
 
-    def delete_all_report(self):
+    def delete_all_reports(self):
         pass
 
 john = Student("John", "MAT001", {"Math": 85, "English": 90, "Science": 78, "History": 88}, 0)
@@ -75,21 +75,27 @@ def menu():
 
 starter = True
 while starter:
-    menu()
-    user_choice = int(input())
-    if user_choice == 1:
-        model.add_student(mel)
-        print("Done")
-    elif user_choice == 2:
-        john.add_grade("Chem", 7)
-        print("Done")
-    elif user_choice == 3:
-        model.show_all_students()
-    elif user_choice == 4:
-        model.generate_all_reports()
-    elif user_choice == 5:
-        model.back_reports()
-    elif user_choice == 6:
+    try:
+        menu()
+        user_choice = int(input())
+        if user_choice == 1:
+            model.add_student(mel)
+            print("Done")
+        elif user_choice == 2:
+            john.add_grade("Chem", 7)
+            print("Done")
+        elif user_choice == 3:
+            model.show_all_students()
+        elif user_choice == 4:
+            model.generate_all_reports()
+        elif user_choice == 5:
+            model.back_reports()
+        elif user_choice == 6:
+            model.delete_all_reports()
+        elif user_choice == 7:
+            starter = False
+        else:
+            print("Invalid option")
+    except:
+        print("Invalid Input!!! \nEnter digit between 1-7 only")
     
-    elif user_choice == 7:
-        starter = False
