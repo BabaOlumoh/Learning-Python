@@ -1,5 +1,9 @@
 import statistics
 import datetime
+import os
+
+backup_path = os.getcwd()
+report_path = os.getcwd()
 class Student:
     def __init__(self, name, student_id, grades, average):
         self.name = name
@@ -47,12 +51,21 @@ class School:
         return None
 
     def generate_all_reports(self):
-        gen_getdate = datetime.datetime.now()
-        gen_title = gen_getdate.strftime("%Y%m%d")
-        for student in self.students:
-            with open(f"report{gen_title}.txt", "a+") as f:
-                f.write(f"{student.display_info()}\n")
-
+        directory = "Report_Directory"
+        path = os.path.join(os.getcwd(), directory)
+        try:
+            os.makedirs(path, exist_ok = True)
+            print(f"{directory} created successfully")
+        except OSError as error:
+            print(f"{directory} already exist")
+        finally:
+            gen_getdate = datetime.datetime.now()
+            gen_title = gen_getdate.strftime("%Y%m%d")
+            for student in self.students:
+                with open(os.path.join(path, f"{student.name}_report{gen_title}.txt"), "a+") as f:
+                    f.write(f"{student.display_info()}\n")
+                with open(os.path.join(path, f"report{gen_title}.txt"), "a+") as f:
+                    f.write(f"{student.display_info()}\n")
     def back_reports(self):
         pass
 
