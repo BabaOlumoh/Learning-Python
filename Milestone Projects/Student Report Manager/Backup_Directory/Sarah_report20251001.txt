@@ -1,7 +1,2 @@
 Name: Sarah | Student_ID: MAT004 | Grades: {'Math': 60, 'English': 65, 'Science': 58, 'History': 62} | Average 0
 Name: Sarah | Student_ID: MAT004 | Grades: {'Math': 60, 'English': 65, 'Science': 58, 'History': 62} | Average 0
-Name: Sarah | Student_ID: MAT004 | Grades: {'Math': 60, 'English': 65, 'Science': 58, 'History': 62} | Average 0
-Name: Sarah | Student_ID: MAT004 | Grades: {'Math': 60, 'English': 65, 'Science': 58, 'History': 62} | Average 0
-Name: Sarah | Student_ID: MAT004 | Grades: {'Math': 60, 'English': 65, 'Science': 58, 'History': 62} | Average 0
-Name: Sarah | Student_ID: MAT004 | Grades: {'Math': 60, 'English': 65, 'Science': 58, 'History': 62} | Average 0
-Name: Sarah | Student_ID: MAT004 | Grades: {'Math': 60, 'English': 65, 'Science': 58, 'History': 62} | Average 0

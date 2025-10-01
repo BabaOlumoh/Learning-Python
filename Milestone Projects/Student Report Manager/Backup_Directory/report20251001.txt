@@ -8,28 +8,3 @@ Name: Mary | Student_ID: MAT002 | Grades: {'Math': 70, 'English': 82, 'Science':
 Name: David | Student_ID: MAT003 | Grades: {'Math': 95, 'English': 89, 'Science': 92, 'History': 94} | Average 0
 Name: Sarah | Student_ID: MAT004 | Grades: {'Math': 60, 'English': 65, 'Science': 58, 'History': 62} | Average 0
 Name: Grace | Student_ID: MAT005 | Grades: {'Math': 78, 'English': 85, 'Science': 80, 'History': 76} | Average 79.75
-Name: John | Student_ID: MAT001 | Grades: {'Math': 85, 'English': 90, 'Science': 78, 'History': 88, 'Chem': 7} | Average 0
-Name: Mary | Student_ID: MAT002 | Grades: {'Math': 70, 'English': 82, 'Science': 75, 'History': 80} | Average 0
-Name: David | Student_ID: MAT003 | Grades: {'Math': 95, 'English': 89, 'Science': 92, 'History': 94} | Average 0
-Name: Sarah | Student_ID: MAT004 | Grades: {'Math': 60, 'English': 65, 'Science': 58, 'History': 62} | Average 0
-Name: Grace | Student_ID: MAT005 | Grades: {'Math': 78, 'English': 85, 'Science': 80, 'History': 76} | Average 79.75
-Name: John | Student_ID: MAT001 | Grades: {'Math': 85, 'English': 90, 'Science': 78, 'History': 88, 'Chem': 7} | Average 0
-Name: Mary | Student_ID: MAT002 | Grades: {'Math': 70, 'English': 82, 'Science': 75, 'History': 80} | Average 0
-Name: David | Student_ID: MAT003 | Grades: {'Math': 95, 'English': 89, 'Science': 92, 'History': 94} | Average 0
-Name: Sarah | Student_ID: MAT004 | Grades: {'Math': 60, 'English': 65, 'Science': 58, 'History': 62} | Average 0
-Name: Grace | Student_ID: MAT005 | Grades: {'Math': 78, 'English': 85, 'Science': 80, 'History': 76} | Average 79.75
-Name: John | Student_ID: MAT001 | Grades: {'Math': 85, 'English': 90, 'Science': 78, 'History': 88, 'Chem': 7} | Average 0
-Name: Mary | Student_ID: MAT002 | Grades: {'Math': 70, 'English': 82, 'Science': 75, 'History': 80} | Average 0
-Name: David | Student_ID: MAT003 | Grades: {'Math': 95, 'English': 89, 'Science': 92, 'History': 94} | Average 0
-Name: Sarah | Student_ID: MAT004 | Grades: {'Math': 60, 'English': 65, 'Science': 58, 'History': 62} | Average 0
-Name: Grace | Student_ID: MAT005 | Grades: {'Math': 78, 'English': 85, 'Science': 80, 'History': 76} | Average 79.75
-Name: John | Student_ID: MAT001 | Grades: {'Math': 85, 'English': 90, 'Science': 78, 'History': 88, 'Chem': 7} | Average 0
-Name: Mary | Student_ID: MAT002 | Grades: {'Math': 70, 'English': 82, 'Science': 75, 'History': 80} | Average 0
-Name: David | Student_ID: MAT003 | Grades: {'Math': 95, 'English': 89, 'Science': 92, 'History': 94} | Average 0
-Name: Sarah | Student_ID: MAT004 | Grades: {'Math': 60, 'English': 65, 'Science': 58, 'History': 62} | Average 0
-Name: Grace | Student_ID: MAT005 | Grades: {'Math': 78, 'English': 85, 'Science': 80, 'History': 76} | Average 79.75
-Name: John | Student_ID: MAT001 | Grades: {'Math': 85, 'English': 90, 'Science': 78, 'History': 88, 'Chem': 7} | Average 0
-Name: Mary | Student_ID: MAT002 | Grades: {'Math': 70, 'English': 82, 'Science': 75, 'History': 80} | Average 0
-Name: David | Student_ID: MAT003 | Grades: {'Math': 95, 'English': 89, 'Science': 92, 'History': 94} | Average 0
-Name: Sarah | Student_ID: MAT004 | Grades: {'Math': 60, 'English': 65, 'Science': 58, 'History': 62} | Average 0
-Name: Grace | Student_ID: MAT005 | Grades: {'Math': 78, 'English': 85, 'Science': 80, 'History': 76} | Average 79.75

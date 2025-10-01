@@ -1,7 +1,2 @@
 Name: Grace | Student_ID: MAT005 | Grades: {'Math': 78, 'English': 85, 'Science': 80, 'History': 76} | Average 79.75
 Name: Grace | Student_ID: MAT005 | Grades: {'Math': 78, 'English': 85, 'Science': 80, 'History': 76} | Average 79.75
-Name: Grace | Student_ID: MAT005 | Grades: {'Math': 78, 'English': 85, 'Science': 80, 'History': 76} | Average 79.75
-Name: Grace | Student_ID: MAT005 | Grades: {'Math': 78, 'English': 85, 'Science': 80, 'History': 76} | Average 79.75
-Name: Grace | Student_ID: MAT005 | Grades: {'Math': 78, 'English': 85, 'Science': 80, 'History': 76} | Average 79.75
-Name: Grace | Student_ID: MAT005 | Grades: {'Math': 78, 'English': 85, 'Science': 80, 'History': 76} | Average 79.75
-Name: Grace | Student_ID: MAT005 | Grades: {'Math': 78, 'English': 85, 'Science': 80, 'History': 76} | Average 79.75

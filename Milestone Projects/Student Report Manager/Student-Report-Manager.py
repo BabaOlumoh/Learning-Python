@@ -12,7 +12,7 @@ class Student:
         self.name = name
         self.student_id = student_id
         self.grades = grades
-        self.average = average
+        self.average = None
 
     def add_grade(self, subject, score):
         self.grades.update({subject:score})
@@ -28,7 +28,7 @@ class Student:
         getdate = datetime.datetime.now()
         title = getdate.strftime("%Y%m%d")
         with open(f"singlereport{title}.txt", "a+") as f:
-            f.write(Student.display_info(self))
+            f.write(self.display_info())
 
     def __str__(self):
         return f"{self.name} {self.student_id} {self.average}"
@@ -81,13 +81,13 @@ class School:
         finally:
             for file in source:
                 shutil.copy(file, destination)
-                print(f"The following files {file} have been copied to {directory}")
+                print(f"The following files {os.path.basename(file)} have been copied to {directory}")
 
     def delete_all_reports(self):
         destination = glob.glob(os.path.join(os.getcwd(), "Report_Directory/*.txt"))
         for file in destination:
             send2trash.send2trash(file)
-            print(f"The following files: {file} have been sent to bin")
+            print(f"The following files: {os.path.basename(file)} have been sent to bin")
 
 john = Student("John", "MAT001", {"Math": 85, "English": 90, "Science": 78, "History": 88}, 0)
 mary = Student("Mary", "MAT002", {"Math": 70, "English": 82, "Science": 75, "History": 80}, 0)
