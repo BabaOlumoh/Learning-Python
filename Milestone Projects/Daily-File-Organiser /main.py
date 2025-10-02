@@ -39,6 +39,14 @@ try:
 except OSError as error:
     print("File already exist!")
 
+#Zips
+zips = os.path.join(os.getcwd(), "Downloads/Zips")
+try:
+    os.makedirs(zips, exist_ok = False)
+    print("File created successfully")
+except OSError as error:
+    print("File already exist!")
+    
 #Others
 others = os.path.join(os.getcwd(), "Downloads/Others")
 try:
@@ -47,3 +55,39 @@ try:
 except OSError as error:
     print("File already exist!")
 
+#Moving files
+downloads = os.path.join(os.getcwd(), "Downloads")
+
+for file in os.listdir(downloads):
+    source = os.path.join(downloads, file)
+    if file.endswith((".mp4", ".mkv", ".mov")):
+        source = os.path.join(downloads, file)
+        destination = os.path.join(videos, file)
+        shutil.move(source, destination)
+        print(f"{file} moved to {os.path.basename(videos)}")
+    elif file.endswith((".jpg", ".jpeg", ".png", ".gif")):
+        source = os.path.join(downloads, file)
+        destination = os.path.join(images, file)
+        shutil.move(source, destination)
+        print(f"{file} moved to {os.path.basename(images)}")
+    elif file.endswith((".pdf")):
+        source = os.path.join(downloads, file)
+        destination = os.path.join(pdf, file)
+        shutil.move(source, destination)
+        print(f"{file} moved to {os.path.basename(pdf)}")
+    elif file.endswith((".docx", ".txt", ".csv")):
+        source = os.path.join(downloads, file)
+        destination = os.path.join(documents, file)
+        shutil.move(source, destination)
+        print(f"{file} moved to {os.path.basename(documents)}")
+    elif file.endswith((".zip", ".rar", ".7z")):
+        source = os.path.join(downloads, file)
+        destination = os.path.join(zips, file)
+        shutil.move(source, destination)
+        print(f"{file} moved to {os.path.basename(zips)}")
+    elif os.path.isfile(source): #To ensure only a file is movedA
+        destination = os.path.join(others, file)
+        shutil.move(source, destination)
+        print(f"{file} moved to {os.path.basename(others)}")
+    else:
+        print("No found moved!")
