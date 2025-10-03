@@ -3,8 +3,7 @@ import os
 import shutil
 
 #Getting time for file name
-date_init = datetime.datetime.now()
-get_date = date_init.strftime("%Y%m%d_%H%M")
+get_date = datetime.datetime.now().strftime("%Y%m%d_%H%M")
 
 #File creation and error handling for folders
 #PDF Folder
@@ -105,3 +104,16 @@ with open(f"Log/{get_date}logfile", "a") as f:
             destination = os.path.join(others, file)
             shutil.move(source, destination)
             f.write(f"{file} moved to {os.path.basename(others)}  on {get_date}\n")
+
+#Backup
+with open(f"Log/Backup_{get_date}", "a") as f:
+    for folder in os.listdir(downloads):
+        source = os.path.join(downloads, folder)
+        destination = os.path.join(backup, folder)
+        if os.path.isfile(source):
+            continue
+        try:
+            shutil.copytree(source, destination)
+            f.write(f"{folder} back up on {get_date}\n")
+        except:
+            print("A similar file exist")    
