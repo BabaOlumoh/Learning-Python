@@ -112,8 +112,13 @@ with open(f"Log/Backup_{get_date}", "a") as f:
         destination = os.path.join(backup, folder)
         if os.path.isfile(source):
             continue
+        if folder in ["PDFs", "Images", "Videos", "Documents", "Zips", "Others"]:
+            continue
         try:
             shutil.copytree(source, destination)
             f.write(f"{folder} back up on {get_date}\n")
         except:
-            print("A similar file exist")    
+            print(f"{folder} exists, skipped")       
+
+print("\n✅ File organization and backup completed!")
+print(f"📁 Log saved in Log/{get_date}_logfile.txt")
