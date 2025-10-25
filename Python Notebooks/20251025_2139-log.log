@@ -1,0 +1,13 @@
+2025-10-25 21:39:32,038 - INFO - NumExpr defaulting to 8 threads.
+2025-10-25 21:39:32,280 - INFO - info
+2025-10-25 21:39:32,280 - WARNING - warning
+2025-10-25 21:39:32,281 - ERROR - An error has occurred
+2025-10-25 21:39:32,281 - CRITICAL - critical
+2025-10-25 21:39:32,637 - ERROR - ZeroDivisionError
+Traceback (most recent call last):
+  File "/var/folders/n9/hmvfpz0905z6n1yzq72hbw3c0000gn/T/ipykernel_41693/1284697424.py", line 2, in <module>
+    1/0
+    ~^~
+ZeroDivisionError: division by zero
+2025-10-25 21:47:27,834 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-25 21:47:27,841 - WARNING - No such comm: e3b82783-c29c-4e63-bb2b-d3483f1822ce
