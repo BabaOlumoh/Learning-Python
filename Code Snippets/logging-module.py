@@ -14,3 +14,4 @@ try:
     1/0
 except ZeroDivisionError as e:
     logging.exception("Zero")
+

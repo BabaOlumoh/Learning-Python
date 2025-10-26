@@ -1,0 +1,18 @@
+2025-10-25 23:41:49,568 - ERROR - Error during SFTP connection: [Errno 60] Operation timed out
+Traceback (most recent call last):
+  File "/var/folders/n9/hmvfpz0905z6n1yzq72hbw3c0000gn/T/ipykernel_44163/2752587241.py", line 45, in <module>
+    client.connect(hostname = '192.168.64', username = 'testuser', password = 'TempPassword1')
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/paramiko/client.py", line 384, in connect
+    sock.connect(addr)
+    ~~~~~~~~~~~~^^^^^^
+TimeoutError: [Errno 60] Operation timed out
+2025-10-25 23:45:18,466 - ERROR - Error during SFTP connection: [Errno 60] Operation timed out
+Traceback (most recent call last):
+  File "/var/folders/n9/hmvfpz0905z6n1yzq72hbw3c0000gn/T/ipykernel_44163/292805250.py", line 45, in <module>
+    client.connect(hostname = '192.168.64', username = 'testuser', password = 'TempPassword1')
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/paramiko/client.py", line 384, in connect
+    sock.connect(addr)
+    ~~~~~~~~~~~~^^^^^^
+TimeoutError: [Errno 60] Operation timed out
