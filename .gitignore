@@ -1,2 +1,3 @@
 #ignore jupiter checkpoints
 *.ipynb_checkpoints
+config.json

@@ -1,0 +1,6 @@
+2025-10-26 20:04:57,460 - ERROR - Error during SFTP connection: name 'test' is not defined
+Traceback (most recent call last):
+  File "/var/folders/n9/hmvfpz0905z6n1yzq72hbw3c0000gn/T/ipykernel_63847/371204519.py", line 66, in <module>
+    client.connect(hostname = sftp_host, username = test, password = sftp_pass)
+                                                    ^^^^
+NameError: name 'test' is not defined
