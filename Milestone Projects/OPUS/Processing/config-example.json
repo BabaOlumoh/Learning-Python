@@ -1,11 +1,11 @@
 {
     "sftp":{
-        "hostname": "192.168.64.3",
-        "username": "testuser",
-        "password": "TempPassword1"
+        "hostname": "192.168.34.5",
+        "username": "username",
+        "password": "password"
     },
     "email":{
-        "address": "learningandcertifications@gmail.com",
-        "password": "amjutefntketxvfw"
+        "address": "address@gmail.com",
+        "password": "password"
     }
 }
